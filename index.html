@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site em Construção</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body style="background-color: #1c1c1c;">
+    <header class="py-3">
+        <div class="container">
+            <h1 class="text-white">Meus Contatos</h1>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://github.com/GuilhermeRossiKirsten" target="_blank" class="text-white">Github</a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/guilherme-rossi-kirsten/" target="_blank" class="text-white">Linkedin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="py-5" style="margin-bottom: 100px;">
+        <div class="container"> 
+            <div class="console">
+                <p>Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 5.15.146.1)</p>
+                <p>root@DESKTOP-S2BAIDT:~# // SYSTEM WARNING: Erro de Sistema //</p>
+                <p>root@DESKTOP-S2BAIDT:~#<strong> ALERT LEVEL: CRIMSON</strong></p>
+                <p>root@DESKTOP-S2BAIDT:~#<strong> SOURCE:</strong> Unknown</p>
+                <p>root@DESKTOP-S2BAIDT:~#<strong> SECURITY PROTOCOL:</strong> In Violation</p>
+                <p class="glitch glitch--2">WARNING: Acesso não autorizado ao núcleo do sistema detectado.</p>
+                <p>Acesso negado. Todos os sistemas foram desativados.</p>
+                <div id="errorMessage" style="color: yellow;"></div>
+                <p><strong>Directive to Users:</strong></p>
+                <ul>
+                    <li> -Cesse todas as atividades não autorizadas imediatamente.</li>
+                    <li> -Relate qualquer atividade suspeita à equipe de segurança.</li>
+                    <li> -Aguarde mais instruções do administrador do sistema.</li>
+                </ul>
+                <p>O não cumprimento resultará em consequências graves.</p>
+                <h2 class="glitch glitch--1">Erro de Sistema - Site em Construção</h2>
+                <p>Fique ligado para mais atualizações em breve!</p>
+                <p>Lembre-se: a segurança é fundamental. Qualquer violação compromete a integridade de todo o sistema.</p>          
+            </div>
+        </div>
+    </main>
+    <footer class="text-white py-3">
+        <div class="container">
+            <p style="text-align: center;">&copy; 2024 rossik.dev.br. Todos os direitos reservados.</p>
+            <p style="text-align: center;">Desenvolvido por <a href="https://rossik.dev.br" target="_blank">Rossik</a></p>
+        </div>
+    </footer>
+    </body>
+    <script>
+        // Função para inserir a mensagem dinamicamente
+        function inserirMensagemErro() {
+            var errorMessage = document.getElementById("errorMessage");
+            var currentDate = new Date().toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' });
+            var mensagem = document.createElement("div");
+            mensagem.innerHTML ="<p>Date: " + currentDate + "</p>" +
+                                "<p>Time: " + new Date().toLocaleTimeString() + " UTC</p>";
+            errorMessage.appendChild(mensagem);
+        }
+
+        // Chama a função para inserir a mensagem quando a página é carregada
+        window.onload = inserirMensagemErro;
+    </script>
+</html>
